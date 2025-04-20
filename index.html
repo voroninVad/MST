@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>MST</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__logo">
+        <img src="./image/logo.png" alt="logo" />
+      </div>
+      <nav class="header__menu">
+        <ul class="menu menu-desktop">
+          <li><a class="nav-link" href="#about">about</a></li>
+          <li><a class="nav-link" href="#contacts">contacts</a></li>
+          <li><a class="nav-link" href="#socials">social media</a></li>
+        </ul>
+
+        <input id="burger-toggle" type="checkbox" />
+        <label for="burger-toggle" class="burger-toggle">
+          <span></span>
+        </label>
+        <ul class="menu menu-burger">
+          <li>
+            <a class="nav-link" href="#about">about</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contacts">contacts</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#socials">social media</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main__banner">
+        <div class="banner__info">
+          <h1 class="banner__title">Construction Services You Can Trust</h1>
+          <p class="banner__desc">
+            Building your vision with precision and care.
+          </p>
+          <ul class="banner-list__prem">
+            <li>From <span>$10,000</span></li>
+            <li>Up to <span>30%</span> off services</li>
+            <li>Quality and reliability</li>
+          </ul>
+          <a href="#contacts" class="btn__order">order</a>
+        </div>
+        <div class="banner_img"></div>
+      </section>
+      <hr style="height: 100px; background: #282829; border: none" />
+      <section id="about" class="main__about">
+        <div class="about__img-before"></div>
+        <div class="about__list">
+          <ul class="list">
+            <li>Over 20 years of experience</li>
+            <li>Specializing in residential and commercial projects</li>
+            <li>Guaranteed quality and on-time delivery</li>
+            <li>Cutting-edge technology and skilled workers</li>
+          </ul>
+          <a href="#contacts" class="btn__order">order</a>
+        </div>
+        <div class="about__img-after"></div>
+      </section>
+      <hr style="height: 100px; background: #282829; border: none" />
+      <section class="main__form">
+        <div id="contacts" class="section__form">
+          <form class="form" action="#" method="post">
+            <h1 class="section__form-title">Leave your details for feedback</h1>
+
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Name"
+              id="userName"
+            />
+            <div class="error-message" id="nameError"></div>
+
+            <input
+              type="email"
+              name="user_email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}"
+              placeholder="E-mail"
+              id="userEmail"
+            />
+            <div class="error-message" id="emailError"></div>
+            <label for="userAccept"
+              ><input
+                type="checkbox"
+                name="user_accept"
+                id="userAccept"
+              />
+              I accept Privacy policy</label
+            >
+            <div class="error-message" id="checkboxError"></div>
+            <button type="submit" class="btn__form">send</button>
+          </form>
+          <div class="section_form-img"></div>
+        </div>
+      </section>
+      <hr style="height: 100px; background: #282829; border: none" />
+    </main>
+    <footer>
+      <ul class="items__premuim">
+        <li class="item">Reliability</li>
+        <li class="item">Quality</li>
+        <li class="item">Speed</li>
+      </ul>
+      <div class="footer__contacts-social">
+        <div class="contacts">
+          <div class="footer__logo">
+            <img src="./image/logo.png" alt="logo" />
+          </div>
+          <div id="socials" class="socials"></div>
+          <a href="#contacts" class="btn__order">order</a>
+        </div>
+        <div class="copyright">
+          <p>&copy 2024, Copyright.</p>
+          <p>Privacy policy</p>
+          <p>Terms of Use</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
